@@ -1,17 +1,14 @@
-package service;
+package ru.itpark.service;
 
-import comparator.ProductByNameComparator;
-import model.ExerciseBike;
-import model.Product;
-import model.Smartphone;
-import model.TV;
+import ru.itpark.comparator.ProductByNameComparator;
+import ru.itpark.model.Product;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-public class YulmartService {
+public class UlmartService {
     private final Collection<Product>items = new ArrayList<>();
 
     public void add(Product item){

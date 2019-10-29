@@ -1,14 +1,16 @@
-import model.ExerciseBike;
-import model.Product;
-import model.Smartphone;
-import model.TV;
-import service.YulmartService;
+package ru.itpark;
+
+import ru.itpark.model.ExerciseBike;
+import ru.itpark.model.Product;
+import ru.itpark.model.Smartphone;
+import ru.itpark.model.TV;
+import ru.itpark.service.UlmartService;
 
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        YulmartService service = new YulmartService();
+        UlmartService service = new UlmartService();
         service.add(new Smartphone(4496663, "Redmi Note 7","Smartphone", 13_990, 4, 2, "blue", 3 ));
         service.add(new Smartphone(4574121, "Redmi 7A", "Smartphone", 7_990, 0, 2, "black",2));
         service.add(new TV(4509006, "Витязь 43LF0207", "TV", 12_990, 5, 43, "1080p (Full HD)", "Нет"));

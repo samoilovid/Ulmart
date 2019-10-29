@@ -1,6 +1,6 @@
-package comparator;
+package ru.itpark.comparator;
 
-import model.Product;
+import ru.itpark.model.Product;
 
 import java.util.Comparator;
 
