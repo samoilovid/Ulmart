@@ -1,6 +1,6 @@
 package ru.itpark.service;
 
-import ru.itpark.comparator.ProductByNameComparator;
+import ru.itpark.comparator.ProductByNameAscComparator;
 import ru.itpark.model.Product;
 
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ public class UlmartService {
                 result.add(item);
             }
         }
-        result.sort(new ProductByNameComparator());
+        result.sort(new ProductByNameAscComparator());
         return result;
     }
     public List<Product> searchByCategory(String category){
@@ -38,22 +38,22 @@ public class UlmartService {
                 result.add(item);
             }
         }
-        result.sort(new ProductByNameComparator());
+        result.sort(new ProductByNameAscComparator());
         return result;
     }
     public  List<Product> sortByName(){
         List<Product> result = new ArrayList<>(items);
-        result.sort(new ProductByNameComparator());
+        result.sort(new ProductByNameAscComparator());
         return result;
     }
     public  List<Product> sortByRating(){
         List<Product> result = new ArrayList<>(items);
-        result.sort(new ProductByNameComparator());
+        result.sort(new ProductByNameAscComparator());
         return result;
     }
     public  List<Product> sortByPrice(){
         List<Product> result = new ArrayList<>(items);
-        result.sort(new ProductByNameComparator());
+        result.sort(new ProductByNameAscComparator());
         return result;
     }
 
